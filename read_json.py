@@ -1,3 +1,4 @@
+import twitter
 def read_json(json_, path):
     """
     (object, list) -> object
@@ -9,7 +10,3 @@ def read_json(json_, path):
     else:
         return read_json(value, path[1:len(path)])
 
-# Example of use:
-# api = twitter.Api( consumer_key= "...", consumer_secret= "...", access_token_key= "...", access_token_secret= "..." )
-# json_ = api.GetUser().AsDict()
-# print( read_json( json_, ["status","id"]) )
